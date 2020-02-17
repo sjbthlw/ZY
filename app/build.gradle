@@ -31,12 +31,6 @@ android {
             jni.srcDirs = ['src/main/cpp', 'src/main/cpp/', 'src/main/cpp/bsp', 'src/main/cpp/bsp/', 'src/main/cpp/card', 'src/main/cpp/card/', 'src/main/cpp/secret', 'src/main/cpp/secret/']
             //jniLibs.srcDirs = ['libs']
         }
-        zytk35_mpos {
-            java.srcDirs = ['src/zytk35_mpos/java']
-        }
-        zytk35_buspos {
-            java.srcDirs = ['src/zytk35_buspos/java']
-        }
     }
 
     sourceSets {

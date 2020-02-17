@@ -1,19 +1,30 @@
 package com.huiyuenet.faceCheck;
 
+import com.hzsun.mpos.Global.Global;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class THFI_Param {
-    public static int nMinFaceSize = 50;//min face width size can be detected,default is 50 pixels
-    public static int nRollAngle = 30;//max face roll angle,default is 30(degree)
-    public static int bOnlyDetect = -1;//ingored
-    public static int dwReserved = 0;//reserved value,must be NULL
+	public static int nMinFaceSize = 50;//min face width size can be detected,default is 50 pixels
+	public static int nRollAngle = 30;//max face roll angle,default is 30(degree)
+	public static int bOnlyDetect = -1;//ingored
+	public static int dwReserved = 0;//reserved value,must be NULL
     public static int faceFeatureSize = 2560;
 
     public static final String SUFFIX = ".v10";
 
-    public static final int IMG_HEIGHT = 480;
-    public static final int IMG_WIDTH = 640;
+//    public static final int IMG_HEIGHT = 480;
+//    public static final int IMG_WIDTH = 640;
+//
+    public static final int IMG_HEIGHT = Global.IMG_HEIGHT;
+    public static final int IMG_WIDTH = Global.IMG_WIDTH;
+
+    public static final int PICTURE_IMG_HEIGHT = 480;
+    public static final int PICTURE_IMG_WIDTH = 640;
+
+//    public static final int IMG_HEIGHT = 720;
+//    public static final int IMG_WIDTH = 1280;
 
     public static final int SAMPLE_SIZE = 320;  // 360
 

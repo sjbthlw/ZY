@@ -301,4 +301,8 @@ public class Global {
     public static final int FINISH_QR_SCAN = 80;
     public static final int HIDE_CAMERAVIEW = 90;
 
+    //照片
+    public static final int IMG_HEIGHT = 480;
+    public static final int IMG_WIDTH = 640;
+
 }
