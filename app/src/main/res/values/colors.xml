@@ -32,4 +32,16 @@
 
     <color name="inside_color">#d1cdcd</color>
 
+    <color name="gray666">#666666</color>
+    <color name="gray999">#999999</color>
+    <color name="gray6a6">#6A6967</color>
+    <color name="black333">#333333</color>
+    <color name="mask">#CC000000</color>
+    <color name="color_seekBar_mark">#6CA4F2</color>
+    <color name="color_seekBar_unenable">#586E93</color>
+    <color name="white_avatar_bg">#F2F6FE</color>
+    <color name="blue">#095ACB</color>
+    <color name="blue005">#005AD3</color>
+    <color name="pinkred_da5">#DA583F</color>
+
 </resources>
