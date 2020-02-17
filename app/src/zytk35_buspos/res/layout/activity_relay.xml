@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_relay_switch"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/replay_enable" />
+
+    <com.hzsun.mpos.views.SwitchButton
+        android:id="@+id/sb_relay"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@id/tv_relay_switch"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/tv_relay_switch" />
+
+    <TextView
+        android:id="@+id/tv_relay_mode"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_relay_switch"
+        android:layout_alignRight="@+id/tv_relay_switch"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/replay_mode" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_relay_mode"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tv_relay_mode"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_on"
+            style="@style/itemTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@drawable/radio_tint_select"
+            android:checked="true"
+            android:text="@string/replay_on" />
+
+
+        <RadioButton
+            android:id="@+id/radio_off"
+            style="@style/itemTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:buttonTint="@drawable/radio_tint_select"
+            android:text="@string/replay_off" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_relay_duration"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_relay_mode"
+        android:layout_alignRight="@+id/tv_relay_mode"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="5dp"
+        android:text="@string/replay_duration" />
+
+    <EditText
+        android:id="@+id/et_duration"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_relay_duration"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tv_relay_duration"
+        android:background="@mipmap/s_edittext_bg_small"
+        android:gravity="center"
+        android:hint="@string/replay_duration_range"
+        android:inputType="number"
+        android:maxLength="15"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="500"
+        android:textColor="@color/colorBlack"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="25sp" />
+
+    <TextView
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_duration"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/et_duration"
+        android:paddingBottom="10dp"
+        android:text="(ms)"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv_relay_count"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_relay_duration"
+        android:layout_alignRight="@+id/tv_relay_mode"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="5dp"
+        android:text="@string/replay_count" />
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_relay_count"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tv_relay_count"
+        android:background="@mipmap/s_edittext_bg_small"
+        android:gravity="center"
+        android:hint="@string/replay_count_range"
+        android:inputType="number"
+        android:maxLength="15"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/colorBlack"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="25sp" />
+
+
+    <TextView
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_count"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/et_count"
+        android:paddingBottom="10dp"
+        android:text="(次)"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_blue_shape"
+        android:padding="20dp"
+        android:text="@string/replay_test"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_test"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"
+        android:background="@mipmap/cancle_bg" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_test"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:background="@mipmap/confirm_bg" />
+
+</RelativeLayout>

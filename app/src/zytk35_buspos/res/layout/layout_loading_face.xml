@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RL_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mask"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp">
+
+        <com.hzsun.mpos.views.PayLoadingView
+            android:id="@+id/loadingview"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="74dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/loading_face" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loadingview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/paying"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

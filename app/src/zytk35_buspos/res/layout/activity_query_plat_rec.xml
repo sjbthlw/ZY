@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QueryPlatRecActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/business_count_bg">
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/business_count_bg_linear"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/titleTextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="序号" />
+
+            <TextView
+                style="@style/titleTextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="金额" />
+
+            <TextView
+                style="@style/titleTextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="姓名" />
+
+            <TextView
+                style="@style/titleTextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="类型" />
+
+            <TextView
+                style="@style/titleTextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="交易时间" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_bills"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear_top"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

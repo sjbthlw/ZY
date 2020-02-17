@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/s_bg"
+    tools:context=".Activity.CardActivity">
+
+    <TextView
+        android:id="@+id/tv_cput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:text="CPU: 0"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/tv_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-01 14:23 星期四"
+            android:textSize="28sp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_shoperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_netState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/s_net_null"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/s_pay_left"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_suserpic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/s_head_bg" />
+
+        <TextView
+            android:id="@+id/tv_sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="45sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginTop="5dp"
+            android:text="王小明" />
+
+        <TextView
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:textSize="30sp"
+            android:background="@mipmap/s_pay_text_bg"
+            android:gravity="center"
+            android:text="账户余额" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/tv_sbursemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/colorGreen"
+                android:textSize="50sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="元"
+                android:textColor="@color/colorGreen"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="655dp"
+        android:layout_height="347dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/s_pay_right_above">
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="交易模式"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/colorBlackG"
+            android:background="@mipmap/s_mode_bg"/>
+
+        <TextView
+            android:id="@+id/yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="80dp"
+            android:text="元"
+            android:textColor="@color/colorBlack"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_spaymoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/yuan"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="38dp"
+            android:layout_toLeftOf="@id/yuan"
+            android:textSize="70sp"
+            android:text="0.00"
+            android:textColor="@color/colorBlack"/>
+
+
+        <TextView
+            android:id="@+id/tv_sdaypaysum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="222dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/tv_sdaypaymoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignBottom="@id/tv_sdaypaysum"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="370dp"
+            android:text="0.00"/>
+
+        <TextView
+            android:id="@+id/tv_smealpaysum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="282dp"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_smealpaymoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignBottom="@id/tv_smealpaysum"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="370dp"
+            android:text="0.00"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sprompt"
+        android:gravity="center"
+        android:layout_width="655dp"
+        android:layout_height="161dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="17dp"
+        android:background="@mipmap/s_pay_right_below"
+        android:scaleType="fitXY"
+        android:text="支付失败"
+        android:textColor="@color/colorGreen"
+        android:textSize="70sp"/>
+
+</RelativeLayout>

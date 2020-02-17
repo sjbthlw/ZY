@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    package="com.hzsun.mpos">
+     <!--package="com.hzsun.buspos35"-->
+     <!--android:sharedUserId="android.uid.shell">-->
+
+
+    <!--package="com.hzsun.buspos35">-->
+
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXTRA_PERMISSION_GRANTED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.SET_TIME_ZONE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        tools:replace="android:name"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Activity.StartActivity"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.CardActivity" />
+        <activity android:name=".Activity.CardCommonActivity" />
+        <activity android:name=".Activity.StandbyActivity" />
+        <activity android:name=".Activity.QueryPayAllActivity" />
+        <activity android:name=".Activity.SetPayAllActivity" />
+        <activity android:name=".Activity.RecordDispelActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.BaseActivity" />
+        <activity android:name=".Activity.MenuActivity" />
+        <activity android:name=".Activity.CheckMenuActivity" />
+        <activity android:name=".Activity.QueryRecordActivity" />
+        <activity android:name=".Activity.QueryFaceRecActivity" />
+        <activity android:name=".Activity.QueryPlatRecActivity" />
+        <activity android:name=".Activity.SetMenuActivity" />
+        <activity android:name=".Activity.SetUdiskActivity" />
+        <activity android:name=".Activity.WifiActivity" />
+        <activity
+            android:name=".Activity.SetNetParamsActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".Activity.IdentitySoundEditActivity" />
+        <activity android:name=".Activity.AboutPosActivity" />
+        <activity android:name=".Activity.ProgressbarActivity" />
+        <activity
+            tools:replace="android:windowSoftInputMode"
+            android:name=".Activity.EditTextActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Activity.ConfirmActivity" />
+        <activity
+            android:name=".Activity.InputIPActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".Activity.AdvancedActivity" />
+        <activity
+            android:name=".Activity.PWDActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Activity.WifiListActivity" />
+        <activity android:name=".Activity.WifiCardSetActivity" />
+        <activity
+            android:name=".Activity.SetFaceInfoActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".Activity.ScanCardActivity" />
+        <activity android:name=".Activity.VolumeSetActivity" />
+        <activity android:name=".Activity.FaceInfoActivity" />
+        <activity android:name=".Activity.FaceInfoSetActivity" />
+        <activity android:name=".Activity.FaceCharacterActivity" />
+        <activity android:name=".Activity.IdSoundActivity" />
+        <activity
+            android:name=".Activity.RelayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <receiver android:name=".NetWork.NetWorkStateReceiver" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

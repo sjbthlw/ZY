@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VolumeSetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/s_volume1" />
+
+        <com.hzsun.mpos.views.MarkSeekBar
+            android:id="@+id/msb_volume_set"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="460dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:maxHeight="15dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:splitTrack="false"
+            android:thumb="@mipmap/thumb"
+            android:thumbOffset="4dp"
+            android:isScrollContainer="true"
+            android:fadeScrollbars="true"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/s_volume2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="600dp"
+        android:background="@mipmap/cancle_bg" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="600dp"
+        android:background="@mipmap/confirm_bg" />
+
+
+</RelativeLayout>

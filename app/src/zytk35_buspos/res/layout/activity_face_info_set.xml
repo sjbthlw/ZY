@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FaceInfoSetActivity">
+
+    <TextView
+        android:id="@+id/tv_faceResolution"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="230dp"
+        android:text="人脸识别度" />
+
+    <TextView
+        android:id="@+id/tv_immortalDetect"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_faceResolution"
+        android:layout_alignRight="@id/tv_faceResolution"
+        android:layout_marginTop="50dp"
+        android:text="真人检测" />
+
+    <TextView
+        android:id="@+id/tv_immortalResolution"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_immortalDetect"
+        android:layout_alignRight="@id/tv_immortalDetect"
+        android:layout_marginTop="50dp"
+        android:text="真人识别度" />
+
+    <com.hzsun.mpos.views.MarkSeekBar
+        android:id="@+id/msb_faceResolution"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="228dp"
+        android:layout_toRightOf="@id/tv_faceResolution"
+        android:maxHeight="15dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:splitTrack="false"
+        android:thumb="@mipmap/thumb"
+        android:thumbOffset="4dp"
+        android:isScrollContainer="true"
+        android:fadeScrollbars="true"/>
+
+    <com.hzsun.mpos.views.SwitchButton
+        android:id="@+id/sb_immortalDetect"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/tv_immortalDetect"
+        android:layout_marginTop="315dp"
+        android:layout_marginLeft="50dp"/>
+
+    <com.hzsun.mpos.views.MarkSeekBar
+        android:id="@+id/msb_immortalResolution"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="408dp"
+        android:layout_toRightOf="@id/tv_faceResolution"
+        android:maxHeight="15dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:splitTrack="false"
+        android:thumb="@mipmap/thumb"
+        android:thumbOffset="4dp"
+        android:isScrollContainer="true"
+        android:fadeScrollbars="true"/>
+
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="550dp"
+        android:background="@mipmap/cancle_bg" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="550dp"
+        android:background="@mipmap/confirm_bg" />
+</RelativeLayout>

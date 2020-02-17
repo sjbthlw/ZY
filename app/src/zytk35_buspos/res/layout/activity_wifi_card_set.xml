@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WifiCardSetActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="184dp"
+        android:src="@mipmap/s_msg" />
+
+    <LinearLayout
+        android:id="@+id/ll_wifi_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WIFI"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/wifi_set" />
+
+
+        <Button
+            android:id="@+id/btn_scancard"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="点击刷卡"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btn_scanqr"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="点击扫码"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_wifiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未连接"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <com.hzsun.mpos.camera.CameraTextureView
+        android:id="@+id/preview"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

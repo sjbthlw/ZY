@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="请输入高级密码"
+        android:textColor="@color/colorWhite"
+        android:textSize="33sp" />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_notice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/s_edittext_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_test"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="800dp"
+        android:background="@mipmap/cancle_bg" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_test"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="800dp"
+        android:layout_marginRight="80dp"
+        android:background="@mipmap/confirm_bg" />
+
+
+</RelativeLayout>

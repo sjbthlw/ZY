@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hzsun.mpos.views.HorizontalListView
+        android:id="@+id/cardtype_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/cardtype_gridview"
+        android:background="@color/colorBlueDark" />
+
+    <GridView
+        android:id="@+id/identity_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/divider"
+        android:horizontalSpacing="2dp"
+        android:layoutAnimation="@anim/gridview_anim"
+        android:numColumns="10"
+        android:verticalSpacing="2dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_curidtype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/identity_gridview"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_currenttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="类型"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_identity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black333"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="添加"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_curidtype"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_bg"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black333"
+            android:textSize="25sp" />
+    </ScrollView>
+
+</RelativeLayout>

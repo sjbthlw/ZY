@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_lab"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="33sp" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@drawable/radio_tint_select"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@drawable/radio_tint_select"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_usetip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="(按0,1键进行选择)"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="33sp" />
+
+</LinearLayout>

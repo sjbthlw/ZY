@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/ll_setcard"
+    android:background="@drawable/business_count_bg"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="375dp"
+        android:layout_height="341dp"
+        android:layout_marginTop="116dp"
+        android:src="@mipmap/b_setcard2" />
+
+    <ImageView
+        android:layout_width="431dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="31dp"
+        android:src="@mipmap/b_cardpay" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:text="请刷客户设密卡!"
+        android:textColor="@color/black333"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="请将卡片贴近上方刷卡区"
+        android:textColor="@color/gray999"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

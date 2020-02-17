@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="titleText">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="titleTextBlack">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="itemTitleText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="titleTextGary">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/color_text_gray</item>
+    </style>
+
+    <style name="textParameter">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="def_switch_view">
+        <item name="switch_bg_color">@color/color_switch_blue</item>
+        <item name="switch_ball_color">#ffffff</item>
+    </style>
+
+    <!--***************启动页Theme***************-->
+    <style name="Theme.Splash" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/b_start</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

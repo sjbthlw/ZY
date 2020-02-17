@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/s_bg"
+    tools:context=".Activity.CardPreActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37dp"
+            android:text="11/01 14:23 星期四"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_shoperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_netStatePer"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42dp"
+            android:src="@mipmap/s_net_null" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/charg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="47dp">
+
+        <RelativeLayout
+            android:id="@+id/left_top"
+            android:layout_width="412dp"
+            android:layout_height="161dp"
+            android:background="@mipmap/b_left_top">
+
+            <TextView
+                android:id="@+id/top_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="54dp"
+                android:layout_marginRight="40dp"
+                android:text="元"
+                android:textColor="@color/colorBlack"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_paymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/top_yuan"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/top_yuan"
+                android:text="0.00"
+                android:textColor="@color/colorRed"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_primoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="118dp"
+                android:layout_marginBottom="22dp"
+                android:text="0.00"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_primoney"
+                android:layout_toRightOf="@id/tv_primoney"
+                android:text="元"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_managemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="294dp"
+                android:layout_marginBottom="22dp"
+                android:text="0.00"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_managemoney"
+                android:layout_toRightOf="@id/tv_managemoney"
+                android:text="元"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_middle"
+            android:layout_width="412dp"
+            android:layout_height="161dp"
+            android:layout_below="@id/left_top"
+            android:layout_marginTop="2.5dp"
+            android:background="@mipmap/b_left_middle">
+
+            <TextView
+                android:id="@+id/middle_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="54dp"
+                android:layout_marginRight="40dp"
+                android:text="元"
+                android:textColor="@color/colorBlack"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_bursemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/middle_yuan"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/middle_yuan"
+                android:text="0.00"
+                android:textColor="@color/colorBlack"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_subsidymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="118dp"
+                android:layout_marginBottom="22dp"
+                android:text="0.00"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_subsidymoney"
+                android:layout_toRightOf="@id/tv_subsidymoney"
+                android:text="元"
+                android:textColor="@color/colorBlackGary"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="412dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/left_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.5dp"
+            android:background="@mipmap/b_left_bottom">
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="124.5dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:singleLine="true"
+                android:text="欢迎使用"
+                android:textColor="@color/colorLGreen"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    //扫描相机成像界面
+    <FrameLayout
+        android:id="@+id/fl_face"
+        android:layout_width="wrap_content"
+        android:layout_height="570px"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@id/charg"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="493px"
+            android:layout_height="568px"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b_scan_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Infrface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:visibility="invisible">
+
+            <SurfaceView
+                android:id="@+id/previewInfr"
+                android:layout_width="160px"
+                android:layout_height="213px" />
+        </RelativeLayout>
+
+
+        <SurfaceView
+            android:id="@+id/sv_face"
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_gravity="center" />
+        <ImageView
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_gravity="center"
+            android:src="@mipmap/box"/>
+
+
+        <TextView
+            android:id="@+id/tv_faceNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请将人脸移入框内"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80px"/>
+
+    </FrameLayout>
+
+    //动态图
+    <FrameLayout
+        android:id="@+id/fl_ad"
+        android:layout_width="517px"
+        android:layout_height="593px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@id/charg"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="517px"
+            android:layout_height="593px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b_right_bg" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b_ad_gif" />
+
+        <RelativeLayout
+            android:id="@+id/rl_faceclick"
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/b_face_click_bg"
+            android:scaleType="fitXY"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_faceclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:background="@mipmap/b_face_click"
+                android:paddingBottom="10dp"
+                android:text="使用人脸支付"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qrcode"
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="380px"
+                android:layout_height="380px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="扫一扫上面的二维码，支付"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_faceclick"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="480px"-->
+        <!--android:layout_height="560px"-->
+        <!--android:layout_marginLeft="9.5dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/b_face_click_bak" />-->
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_payok"
+        android:layout_width="517px"
+        android:layout_height="593px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@id/charg"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="517px"
+            android:layout_height="593px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b_right_bg" />
+
+        <ImageView
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/b_userinfo_bg" />
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_userInfo"-->
+        <!--android:layout_width="480px"-->
+        <!--android:layout_height="560px"-->
+        <!--android:layout_marginLeft="9dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:visibility="gone">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_head"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:src="@mipmap/b_head_bg" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_name_userinfo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/iv_head"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="65dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_name_userinfo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text="123"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="34sp"-->
+        <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_payState"
+            android:layout_width="480px"
+            android:layout_height="560px"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/fl_head"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="89dp"
+                android:background="@mipmap/b_pay_state"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_userpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/b_pay_success" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_payprompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="支付成功"
+                android:textColor="@color/colorWhite"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_keyboard"
+        android:layout_width="517px"
+        android:layout_height="593px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@id/charg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="请输入交易密码"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:focusable="false"
+            android:password="true"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="1"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="2"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg" />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="3"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="5"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg" />
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="6"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="7"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="8"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg" />
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="9"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnCanale"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="0"
+                style="@style/titleText"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg" />
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/keyboard_bg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:text="CPU: 0"
+        android:textColor="@color/colorWhite"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dp"
+        android:text="ver: 0"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="8sp" />
+
+</RelativeLayout>

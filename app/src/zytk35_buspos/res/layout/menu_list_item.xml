@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_list_item_bg"
+    android:selectable="true"
+    android:id="@+id/item_bg">
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:textSize="35sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item数据"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

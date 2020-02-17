@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/s_bg"
+    tools:context=".Activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:src="@mipmap/s_zhengyuan" />
+
+        <TextView
+            style="@style/textParameter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:textSize="28sp"
+            android:text="正元智慧欢迎您！" />
+
+        <ImageView
+            android:id="@+id/iv_netState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/s_net_null"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+        <TextView
+            android:id="@+id/date"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-07-14        星期六"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+            android:id="@+id/time"
+            android:layout_below="@id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@id/time2"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/time2"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_centerHorizontal="true"
+            android:text="不允许脱机"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorRead"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智慧芯   联万物   通天下"
+            android:textSize="28sp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/tv_cput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:text="CPU: 0"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

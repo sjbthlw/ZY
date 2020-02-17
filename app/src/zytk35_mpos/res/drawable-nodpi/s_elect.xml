@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="false">
+    <item android:drawable="@mipmap/s_query_elected" android:state_selected="true" />
+    <item android:drawable="@mipmap/s_query_unelect" android:state_selected="false" />
+</selector>

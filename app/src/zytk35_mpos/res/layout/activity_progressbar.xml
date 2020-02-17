@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/s_bg"
+    tools:context=".Activity.ProgressbarActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_check_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/local_business_set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/s_light1"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"
+            android:thumb="@mipmap/s_thumb"
+            android:splitTrack="false"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:max="5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"/>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/s_light2"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="67dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/s_hint"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示："
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorOrange"/>
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lcd_light_hint"
+            android:textSize="28sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</RelativeLayout>

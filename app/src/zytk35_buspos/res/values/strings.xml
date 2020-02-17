@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">ZYTK35_BUSPOS</string>
+    <string name="welcome_hint">启动中...</string>
+    <string name="welcome_text_below">正元智慧</string>
+    <string name="addserviceip_text">请输入服务器IP</string>
+    <string name="chosepos_text_middle">以太网POS</string>
+    <string name="chosepos_text_below">485POS</string>
+    <string name="chosepos_text_above">请选择POS机类型</string>
+    <string name="local_business_set">本机交易设置</string>
+    <string name="local_business_set_1">1.交易模式</string>
+    <string name="local_business_set_2">2.定额结账模式</string>
+    <string name="local_business_set_3">3.数字键盘锁定</string>
+    <string name="local_business_set_4">4.日累清零</string>
+    <string name="business_set_mode_1">普通</string>
+    <string name="business_set_mode_2">单键</string>
+    <string name="business_set_mode_3">定额</string>
+
+    <string name="query">查询</string>
+    <string name="set">设置</string>
+    <string name="chongzheng">冲正</string>
+    <string name="senior">高级</string>
+
+
+    <string name="waitpayabove">请刷卡</string>
+    <string name="waitpaymiddle">等待需要查询流水的用户卡</string>
+    <string name="waitpay">刷卡等待中</string>
+
+    <string name="confirm_clear">确定清零当日累计？</string>
+    <string name="maintenance_set">维护设置</string>
+
+    <string name="set_net_parameter_1">服务器IP</string>
+    <string name="set_net_parameter_2">服务器端口</string>
+    <string name="set_net_parameter_3">本机IP</string>
+    <string name="set_net_parameter_4">子网掩码</string>
+    <string name="set_net_parameter_5">默认网关</string>
+    <string name="set_net_parameter_6">DNS</string>
+
+
+    <string name="lcd_light_hint">使用上下键设置ICD背光亮度</string>
+    <string name="lcd_volume_hint">使用上下键设置音量大小</string>
+
+
+    <string name="local_business_count">本机交易统计类</string>
+
+    <string name="local_Twomenu_check_1">餐累统计</string>
+    <string name="local_Twomenu_check_2">日累统计</string>
+    <string name="local_Twomenu_check_3">最近流水查询</string>
+    <string name="local_Twomenu_check_4">未传流水信息</string>
+    <string name="local_Twomenu_check_5">名单记录信息</string>
+    <string name="local_Twomenu_check_6">本机系统信息</string>
+    <string name="local_Twomenu_check_7">末笔二维码交易信息</string>
+    <string name="local_Twomenu_check_8">支付宝管控信息</string>
+
+    <string name="local_Twomenu_set_1">本机设置</string>
+    <string name="local_Twomenu_set_2">定额结账模式</string>
+    <string name="local_Twomenu_set_3">数字键盘锁定</string>
+    <string name="local_Twomenu_set_4">日餐累计清零</string>
+    <string name="local_Twomenu_set_5">打印小票</string>
+    <string name="local_Twomenu_set_6">音量设置</string>
+    <string name="local_Twomenu_set_7">设置播放金额语音</string>
+    <string name="local_Twomenu_set_8">设置人脸识别模式</string>
+    <string name="local_Twomenu_set_9">WIFI选项</string>
+    <string name="local_Twomenu_set_10">设置人脸特征</string>
+    <string name="local_Twomenu_set_11">设置账户姓名显示</string>
+    <string name="local_Twomenu_set_12">设置是否启用代扣</string>
+    <string name="local_Twomenu_set_13">设置启用商户二维码</string>
+
+    <string name="local_Twomenu_senior_1">网络参数</string>
+    <string name="local_Twomenu_senior_2">关于本机</string>
+    <string name="local_Twomenu_senior_3">设备检测</string>
+    <string name="local_Twomenu_senior_4">高级参数</string>
+
+    <string name="can_lei_tong_ji_1">时段营业笔数</string>
+    <string name="can_lei_tong_ji_2">时段营业总额</string>
+    <string name="can_lei_tong_ji_3">末笔交易营业号</string>
+    <string name="can_lei_tong_ji_4">当餐营业时间</string>
+
+    <string name="ri_lei_tong_ji_1">当日交易笔数</string>
+    <string name="ri_lei_tong_ji_2">当日交易总额</string>
+
+    <string name="roll_note_info_1">黑白名单数量</string>
+    <string name="roll_note_info_2">最大卡内编号</string>
+    <string name="roll_note_info_3">交易记录数量</string>
+    <string name="roll_note_info_4">脱机交易记录数量</string>
+
+    <string name="pos_system_info_1">固件版本号</string>
+    <string name="pos_system_info_2">终端序列号</string>
+    <string name="pos_system_info_3">服务器IP</string>
+    <string name="pos_system_info_4">服务器端口号</string>
+    <string name="pos_system_info_5">本机IP</string>
+    <string name="pos_system_info_6">当前营业分组号</string>
+    <string name="pos_system_info_7">站点号</string>
+
+    <string name="zhi_fu_bao_manage_info_1">启用支付宝管控</string>
+    <string name="zhi_fu_bao_manage_info_2">支付宝管控</string>
+    <string name="zhi_fu_bao_manage_info_3">代理服务器</string>
+    <string name="zhi_fu_bao_manage_info_4">终端时间区域</string>
+    <string name="zhi_fu_bao_manage_info_5">终端机器时间</string>
+
+    <string name="unupload_business_info_1">未传流水笔数</string>
+
+    <string name="business_mode_1">普通</string>
+    <string name="business_mode_2">单键</string>
+    <string name="business_mode_3">定额</string>
+
+    <string name="dinge_jiezhang_mode_1">自动确认</string>
+    <string name="dinge_jiezhang_mode_2">手动确认</string>
+
+    <string name="num_keyboard_lock_1">不锁定</string>
+    <string name="num_keyboard_lock_2">锁定</string>
+
+    <string name="print_ticket_1">不打印</string>
+    <string name="print_ticket_2">直接打印</string>
+
+    <string name="start_QR_code_1">不启用</string>
+    <string name="start_QR_code_2">使用QR内置模块</string>
+    <string name="start_QR_code_3">使用QR扫码枪</string>
+
+    <string name="set_play_speed_sound_1">普通模式</string>
+    <string name="set_play_speed_sound_2">数字金额模式</string>
+
+    <string name="wifi_1">WIFI卡设置</string>
+    <string name="wifi_2">WIFI列表</string>
+    <string name="wifi_3">删除关闭WIFI</string>
+
+    <string name="about_pos_1">网络参数</string>
+    <string name="about_pos_2">本机参数</string>
+    <string name="about_pos_3">系统参数</string>
+    <string name="about_pos_4">LCD亮度</string>
+    <string name="about_pos_5">音量</string>
+    <string name="about_pos_6">设置本地IP获取方式</string>
+
+    <string name="senior_params_1">恢复出厂设置</string>
+    <string name="senior_params_2">初始化设备</string>
+    <string name="senior_params_3">重启设备</string>
+    <string name="senior_params_4">重新上传记录</string>
+    <string name="senior_params_5">测试模式</string>
+    <string name="senior_params_6">FTP客户端</string>
+    <string name="senior_params_7">省电模式</string>
+    <string name="senior_params_8">电池设置</string>
+    <string name="senior_params_9">调试信息查看</string>
+
+    <string name="net_params_1">服务器IP</string>
+    <string name="net_params_2">服务器端口</string>
+    <string name="net_params_3">本机IP</string>
+    <string name="net_params_4">广播</string>
+    <string name="net_params_5">子网掩码</string>
+    <string name="net_params_6">MAC</string>
+
+    <string name="pos_params_1">设备类型</string>
+    <string name="pos_params_2">站点号</string>
+    <string name="pos_params_3">商户号</string>
+    <string name="pos_params_4">余额显示方式</string>
+    <string name="pos_params_5">最大脱机天数</string>
+
+    <string name="system_params_1">固件版本号</string>
+    <string name="system_params_2">软件版本号</string>
+    <string name="system_params_3">终端序列号</string>
+    <string name="system_params_4">终端内码</string>
+    <string name="system_params_5">代理客户号</string>
+    <string name="system_params_6">内核版本</string>
+    <string name="system_params_7">硬件版本</string>
+
+    <string name="get_ip_mode_1">手动设置</string>
+    <string name="get_ip_mode_2">自动获取</string>
+
+    <string name="notice_prompt">提示</string>
+    <string name="notice_title_1">使用</string>
+    <string name="notice_title_2">退出，</string>
+    <string name="notice_title_3">确认键</string>
+    <string name="notice_title_4">保存信息</string>
+
+    <string name="search_wifi">正在搜索wifi...</string>
+
+    <string name="wifi_connect_success">已连接WIFI：</string>
+    <string name="title_activity_query_face_rec">QueryFaceRecActivity</string>
+
+    <string name="paying">正在支付,请稍后...</string>
+
+    <string name="replay_enable">继电器是否打开</string>
+    <string name="replay_mode">继电器模式</string>
+    <string name="replay_duration">动作时长</string>
+    <string name="replay_count">动作脉冲数</string>
+    <string name="replay_on">常开</string>
+    <string name="replay_off">常闭</string>
+    <string name="replay_test">测试继电器</string>
+    <string name="replay_duration_range">范围为0~1000</string>
+    <string name="replay_count_range">范围为0~100</string>
+</resources>

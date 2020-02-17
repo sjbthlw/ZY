@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorBlueProgress">#067ae1</color>
+    <color name="colorBlueDark">#144199</color>
+    <color name="colorGaryProgress">#cacacc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackG">#333333</color>
+    <color name="colorBlackGary">#444444</color>
+    <color name="colorBlue">#1d86e5</color>
+    <color name="color_text_bg_Blue">#4185dd</color>
+    <color name="colorOrange">#ffc863</color>
+    <color name="color_blue_gray">#d0e2ff</color>
+    <color name="color_blue_pale_gray">#e2edff</color>
+    <color name="color_text_gray">#4e4e4e</color>
+    <color name="colorGreen">#51b47d</color>
+    <color name="colorLGreen">#7AB900</color>
+    <color name="colorGreenText">#008000</color>
+    <color name="colorTextColor">#343131</color>
+    <color name="orange">#FFA042</color>
+    <color name="colorRead">#dc4949</color>
+    <color name="whitebg">#bdcfea</color>
+    <color name="colorToastSuccess">#a3f3d7</color>
+    <color name="colorToastFail">#eb9e9e</color>
+    <color name="colorToastWarn">#fae882</color>
+    <color name="inside_color">#d1cdcd</color>
+    <color name="gray666">#666666</color>
+    <color name="gray999">#999999</color>
+    <color name="gray6a6">#6A6967</color>
+    <color name="black333">#333333</color>
+    <color name="mask">#CC000000</color>
+
+    <color name="color_switch_blue">#0851B6</color>
+    <color name="color_seekBar_mark">#6CA4F2</color>
+    <color name="color_seekBar_unenable">#586E93</color>
+    <color name="white_avatar_bg">#F2F6FE</color>
+    <color name="blue">#095ACB</color>
+    <color name="blue005">#005AD3</color>
+    <color name="pinkred_da5">#DA583F</color>
+</resources>
